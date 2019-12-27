@@ -1,4 +1,3 @@
-//senha arco-iris: 'cbc32339968'
 var app = new Vue({
     el: '#app',
     data: {
@@ -31,7 +30,7 @@ var app = new Vue({
 			formData.append('tipo_certificado', this.tipo_certificado)
 			formData.append('logo', this.logo)
 			
-			axios.post('http://dfe.d5tecnologia.com/api/nfe/config',
+			axios.post('http://dfe.bwmsites.com/api/nfe/config',
                 formData,
                 {
                 headers: {
@@ -46,7 +45,7 @@ var app = new Vue({
 			})
 		},
 		getConfig() {
-			axios.get('http://dfe.d5tecnologia.com/api/nfe/config')
+			axios.get('http://dfe.bwmsites.com/api/nfe/config')
 			.then(response => {
 				//this.certifle = response.data.certificado
 				console.log('teste')
